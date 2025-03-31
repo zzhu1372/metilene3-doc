@@ -1,0 +1,7 @@
+2024-06-06 23:20:01,877 enrichr139990778359488::[INFO    ] User defined gene sets is given: /home/zzhu/project/metilene/data/biological/annotation/c8.all.v2023.2.Hs.symbols.gmt
+2024-06-06 23:20:01,902 enrichr139990778359488::[INFO    ] Run: c8.all.v2023.2.Hs.symbols.gmt 
+2024-06-06 23:20:01,902 enrichr139990778359488::[DEBUG   ] Off-line enrichment analysis with library: c8.all.v2023.2.Hs.symbols.gmt
+2024-06-06 23:20:02,270 enrichr139990778359488::[INFO    ] Background is not set! Use all 20418 genes in c8.all.v2023.2.Hs.symbols.gmt.
+2024-06-06 23:20:02,408 enrichr139990778359488::[INFO    ] Save enrichment results for c8.all.v2023.2.Hs.symbols.gmt 
+2024-06-06 23:20:02,794 enrichr139990778359488::[DEBUG   ] Generate figures
+2024-06-06 23:20:02,794 enrichr139990778359488::[INFO    ] Done.

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metilene Report</title>
+    <style>
+        /* Optional: Style for the pop-up */
+        .popup {
+          display: none;
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          height:50%;
+          width:50%;
+          transform: translate(-50%, -50%);
+          padding: 20px;
+          background-color: #fff;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          z-index: 1000;
+          overflow-y: scroll !important;
+        }
+    </style>
+</head>
+<body>
+    <h2>Metilene Report for Loyfer_Blood.input</h2>
+
+    <h3>History</h3>
+    <div>Command: /home/zzhu/project/metilene/metilene-dev/metilene.py -i ./Loyfer_Blood.input -o ./Blood -t 10 -n 2 -g 3 -d 100 -u T -om T -anno hg19 -plt T -gmt /home/zzhu/project/metilene/data/biological/annotation/c8.all.v2023.2.Hs.symbols.gmt </div><br>
+    <div>Version: 2.0</div><br>
+    <div>Parameters: <br>input='./Loyfer_Blood.input', output='./Blood', threads='10', skipMetilene=None, outputImputed='T', unsupervised='T', groupinfo=None, rerun=None, plotTree='T', anno='hg19', gmt='/home/zzhu/project/metilene/data/biological/annotation/c8.all.v2023.2.Hs.symbols.gmt', mincpgs=10, minDMR=5, mindiff=0.1, mindiff_unsup=0.5, mindiff_gsea=0.5, mismatch=0.5, minN0=2, minN=3, minNDMR=100</div><br>
+    <div>Start time: Thu Jun  6 22:42:44 2024</div>
+    End time: Thu Jun  6 23:19:56 2024</div><br><br>
+
+    
+    <h3>Unsupervised</h3>
+    Number of unsupervised DMRs: 117586</div><br>
+    Number of clusters: 6</div><br>
+    
+
+    <button onclick="showPopup('popupCluster')">Click to show the Table of clusters</button>
+    <div id="popupCluster" class="popup"><button onclick="hidePopup('popupCluster')">Close</button><br><p>Clusters of samples:</p><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Group</th>
+    </tr>
+    <tr>
+      <th>ID</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Blood-B-Mem-Z0000041J</th>
+      <td>G2</td>
+    </tr>
+    <tr>
+      <th>Blood-B-Mem-Z0000041K</th>
+      <td>G2</td>
+    </tr>
+    <tr>
+      <th>Blood-B-Z000000TX</th>
+      <td>G2</td>
+    </tr>
+    <tr>
+      <th>Blood-B-Z000000UB</th>
+      <td>G2</td>
+    </tr>
+    <tr>
+      <th>Blood-B-Z000000UR</th>
+      <td>G2</td>
+    </tr>
+    <tr>
+      <th>Blood-Granulocytes-Z000000TZ</th>
+      <td>G0</td>
+    </tr>
+    <tr>
+      <th>Blood-Granulocytes-Z000000UD</th>
+      <td>G0</td>
+    </tr>
+    <tr>
+      <th>Blood-Granulocytes-Z000000UT</th>
+      <td>G0</td>
+    </tr>
+    <tr>
+      <th>Blood-Monocytes-Z000000TP</th>
+      <td>G1</td>
+    </tr>
+    <tr>
+      <th>Blood-Monocytes-Z000000U3</th>
+      <td>G1</td>
+    </tr>
+    <tr>
+      <th>Blood-Monocytes-Z000000UH</th>
+      <td>G1</td>
+    </tr>
+    <tr>
+      <th>Blood-NK-Z000000TM</th>
+      <td>G3</td>
+    </tr>
+    <tr>
+      <th>Blood-NK-Z000000U1</th>
+      <td>G3</td>
+    </tr>
+    <tr>
+      <th>Blood-NK-Z000000UF</th>
+      <td>G3</td>
+    </tr>
+    <tr>
+      <th>Blood-T-CD3-Z000000TV</th>
+      <td>G4</td>
+    </tr>
+    <tr>
+      <th>Blood-T-CD3-Z000000UP</th>
+      <td>G4</td>
+    </tr>
+    <tr>
+      <th>Blood-T-CD4-Z000000TT</th>
+      <td>G4</td>
+    </tr>
+    <tr>
+      <th>Blood-T-CD4-Z000000U7</th>
+      <td>G4</td>
+    </tr>
+    <tr>
+      <th>Blood-T-CD4-Z000000UM</th>
+      <td>G4</td>
+    </tr>
+    <tr>
+      <th>Blood-T-CD8-Z000000TR</th>
+      <td>G4</td>
+    </tr>
+    <tr>
+      <th>Blood-T-CD8-Z000000U5</th>
+      <td>G4</td>
+    </tr>
+    <tr>
+      <th>Blood-T-CD8-Z000000UK</th>
+      <td>G4</td>
+    </tr>
+    <tr>
+      <th>Blood-T-CenMem-CD4-Z00000417</th>
+      <td>G4</td>
+    </tr>
+    <tr>
+      <th>Blood-T-CenMem-CD4-Z0000041D</th>
+      <td>G4</td>
+    </tr>
+    <tr>
+      <th>Blood-T-CenMem-CD4-Z0000041N</th>
+      <td>G4</td>
+    </tr>
+    <tr>
+      <th>Blood-T-Eff-CD8-Z00000419</th>
+      <td>G4</td>
+    </tr>
+    <tr>
+      <th>Blood-T-Eff-CD8-Z0000041F</th>
+      <td>G4</td>
+    </tr>
+    <tr>
+      <th>Blood-T-Eff-CD8-Z0000041Q</th>
+      <td>G4</td>
+    </tr>
+    <tr>
+      <th>Blood-T-EffMem-CD4-Z00000416</th>
+      <td>G4</td>
+    </tr>
+    <tr>
+      <th>Blood-T-EffMem-CD4-Z0000041C</th>
+      <td>G4</td>
+    </tr>
+    <tr>
+      <th>Blood-T-EffMem-CD4-Z0000041M</th>
+      <td>G4</td>
+    </tr>
+    <tr>
+      <th>Blood-T-EffMem-CD8-Z0000041A</th>
+      <td>G4</td>
+    </tr>
+    <tr>
+      <th>Blood-T-EffMem-CD8-Z0000041G</th>
+      <td>G4</td>
+    </tr>
+    <tr>
+      <th>Blood-T-Naive-CD4-Z0000041E</th>
+      <td>G5</td>
+    </tr>
+    <tr>
+      <th>Blood-T-Naive-CD8-Z0000041B</th>
+      <td>G5</td>
+    </tr>
+    <tr>
+      <th>Blood-T-Naive-CD8-Z0000041H</th>
+      <td>G5</td>
+    </tr>
+  </tbody>
+</table><br></div><br><br>
+
+    <button onclick="showPopup('popupTree')">Click to show the figures</button>
+    <div id="popupTree" class="popup"><button onclick="hidePopup('popupTree')">Close</button><br><p>PCA and Heatmap:</p><img src="./Loyfer_Blood.input.dmrpca.jpg" height="300"><img src="./Loyfer_Blood.input.heatmap.jpg" height="300"><br><br><p>Cluster tree:</p><img src="./Loyfer_Blood.input.tree.jpg" height="300"><br></div><br><br>
+
+    
+    <h3>Supervised</h3>
+    Number of supervised DMRs: 670582</div><br>
+    <div>Types of DMRs:</div>
+    <div id="popupgsea0" class="popup"><br>                <button onclick="hidePopup('popupgsea0')">Close</button>                    <p>GSEA for Unmet:G4 - vs - Met:G5</p><img src=./Loyfer_Blood.input.gsea/2_2_2_2_1_3/c8.all.v2023.2.Hs.symbols.gmt.human.enrichr.reports.jpg height="200"><br></div>
+<div id="popupgsea1" class="popup"><br>                <button onclick="hidePopup('popupgsea1')">Close</button>                    <p>GSEA for Unmet:G2 - vs - Met:G5</p><img src=./Loyfer_Blood.input.gsea/2_2_1_2_2_3/c8.all.v2023.2.Hs.symbols.gmt.human.enrichr.reports.jpg height="200"><br></div>
+<div id="popupgsea2" class="popup"><br>                <button onclick="hidePopup('popupgsea2')">Close</button>                    <p>GSEA for Unmet:G2,G4 - vs - Met:G0,G1,G3,G5</p><img src=./Loyfer_Blood.input.gsea/3_3_1_3_1_3/c8.all.v2023.2.Hs.symbols.gmt.human.enrichr.reports.jpg height="200"><br></div>
+<div id="popupgsea3" class="popup"><br>                <button onclick="hidePopup('popupgsea3')">Close</button>                    <p>GSEA for Unmet:G2,G4 - vs - Met:G0,G1,G5</p><img src=./Loyfer_Blood.input.gsea/3_3_1_2_1_3/c8.all.v2023.2.Hs.symbols.gmt.human.enrichr.reports.jpg height="200"><br></div>
+<div id="popupgsea4" class="popup"><br>                <button onclick="hidePopup('popupgsea4')">Close</button>                    <p>GSEA for Unmet:G4 - vs - Met:G1</p><img src=./Loyfer_Blood.input.gsea/2_3_2_2_1_2/c8.all.v2023.2.Hs.symbols.gmt.human.enrichr.reports.jpg height="200"><br></div>
+<div id="popupgsea5" class="popup"><br>                <button onclick="hidePopup('popupgsea5')">Close</button>                    <p>GSEA for Unmet:G4 - vs - Met:G0,G1,G5</p><img src=./Loyfer_Blood.input.gsea/3_3_2_2_1_3/c8.all.v2023.2.Hs.symbols.gmt.human.enrichr.reports.jpg height="200"><br></div>
+<div id="popupgsea6" class="popup"><br>                <button onclick="hidePopup('popupgsea6')">Close</button>                    <p>GSEA for Unmet:G4 - vs - Met:G0</p><img src=./Loyfer_Blood.input.gsea/3_2_2_2_1_2/c8.all.v2023.2.Hs.symbols.gmt.human.enrichr.reports.jpg height="200"><br></div>
+<div id="popupgsea7" class="popup"><br>                <button onclick="hidePopup('popupgsea7')">Close</button>                    <p>GSEA for Unmet:G0 - vs - Met:G5</p><img src=./Loyfer_Blood.input.gsea/1_2_2_2_2_3/c8.all.v2023.2.Hs.symbols.gmt.human.enrichr.reports.jpg height="200"><br></div>
+<div id="popupgsea8" class="popup"><br>                <button onclick="hidePopup('popupgsea8')">Close</button>                    <p>GSEA for Unmet:G4 - vs - Met:G1,G5</p><img src=./Loyfer_Blood.input.gsea/2_3_2_2_1_3/c8.all.v2023.2.Hs.symbols.gmt.human.enrichr.reports.jpg height="200"><br></div>
+<div id="popupgsea9" class="popup"><br>                <button onclick="hidePopup('popupgsea9')">Close</button>                    <p>GSEA for Unmet:G2,G4 - vs - Met:G5</p><img src=./Loyfer_Blood.input.gsea/2_2_1_2_1_3/c8.all.v2023.2.Hs.symbols.gmt.human.enrichr.reports.jpg height="200"><br></div>
+
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>#DMRs</th>
+      <th>GSEA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Unmet:G4 - vs - Met:G5</th>
+      <td>109669</td>
+      <td><button onclick="showPopup('popupgsea0')">Click to show GSEA results</button></td>
+    </tr>
+    <tr>
+      <th>Unmet:G2 - vs - Met:G5</th>
+      <td>44621</td>
+      <td><button onclick="showPopup('popupgsea1')">Click to show GSEA results</button></td>
+    </tr>
+    <tr>
+      <th>Unmet:G2,G4 - vs - Met:G0,G1,G3,G5</th>
+      <td>39165</td>
+      <td><button onclick="showPopup('popupgsea2')">Click to show GSEA results</button></td>
+    </tr>
+    <tr>
+      <th>Unmet:G2,G4 - vs - Met:G0,G1,G5</th>
+      <td>31213</td>
+      <td><button onclick="showPopup('popupgsea3')">Click to show GSEA results</button></td>
+    </tr>
+    <tr>
+      <th>Unmet:G4 - vs - Met:G1</th>
+      <td>28765</td>
+      <td><button onclick="showPopup('popupgsea4')">Click to show GSEA results</button></td>
+    </tr>
+    <tr>
+      <th>Unmet:G4 - vs - Met:G0,G1,G5</th>
+      <td>28346</td>
+      <td><button onclick="showPopup('popupgsea5')">Click to show GSEA results</button></td>
+    </tr>
+    <tr>
+      <th>Unmet:G4 - vs - Met:G0</th>
+      <td>24576</td>
+      <td><button onclick="showPopup('popupgsea6')">Click to show GSEA results</button></td>
+    </tr>
+    <tr>
+      <th>Unmet:G0 - vs - Met:G5</th>
+      <td>17865</td>
+      <td><button onclick="showPopup('popupgsea7')">Click to show GSEA results</button></td>
+    </tr>
+    <tr>
+      <th>Unmet:G4 - vs - Met:G1,G5</th>
+      <td>17266</td>
+      <td><button onclick="showPopup('popupgsea8')">Click to show GSEA results</button></td>
+    </tr>
+    <tr>
+      <th>Unmet:G2,G4 - vs - Met:G5</th>
+      <td>16555</td>
+      <td><button onclick="showPopup('popupgsea9')">Click to show GSEA results</button></td>
+    </tr>
+  </tbody>
+</table><br><br>
+    
+</body>
+
+<script>
+  // JavaScript functions to show and hide the pop-up
+  function showPopup(popupId) {
+      document.getElementById(popupId).style.display = 'block';
+  }
+  function hidePopup(popupId) {
+      document.getElementById(popupId).style.display = 'none';
+  }
+</script>
+    
+</html>
