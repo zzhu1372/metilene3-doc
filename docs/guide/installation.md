@@ -30,8 +30,14 @@ nav_order: 1
 - If you wish to use **ALL functions** (e.g., annotation, visualization and GSEA), additional softwares and packages are needed:
 0. [GNU Make](https://www.gnu.org/software/make/) (usually your OS has it)
 1. [R](https://www.r-project.org/) and [Python](https://www.python.org/)
-2. R packages: [ChIPseeker](https://bioconductor.org/packages/release/bioc/html/ChIPseeker.html) and annotation package for TxDb object (e.g., [hg19](https://www.bioconductor.org/packages/release/data/annotation/html/TxDb.Hsapiens.UCSC.hg19.knownGene.html), [hg38](https://www.bioconductor.org/packages/release/data/annotation/html/TxDb.Hsapiens.UCSC.hg38.knownGene.html), or [mm10](https://bioconductor.org/packages/release/data/annotation/html/TxDb.Mmusculus.UCSC.mm10.knownGene.html))
+2. R packages: [ChIPseeker](https://bioconductor.org/packages/release/bioc/html/ChIPseeker.html) and annotation package for TxDb object (e.g., [org.Hs.eg.db](https://bioconductor.org/packages/release/data/annotation/html/org.Hs.eg.db.html), [hg19](https://www.bioconductor.org/packages/release/data/annotation/html/TxDb.Hsapiens.UCSC.hg19.knownGene.html), [hg38](https://www.bioconductor.org/packages/release/data/annotation/html/TxDb.Hsapiens.UCSC.hg38.knownGene.html), or [mm10](https://bioconductor.org/packages/release/data/annotation/html/TxDb.Mmusculus.UCSC.mm10.knownGene.html))
 3. Python packages: [pandas](https://pandas.pydata.org/), [numpy](https://numpy.org/), [scikit-learn](https://scikit-learn.org/), [matplotlib](https://matplotlib.org/), [seaborn](https://seaborn.pydata.org/), [biopython](https://biopython.org/wiki/Download), [gseapy](https://github.com/zqfang/GSEApy/tree/master)
+<br>**One simple solution to install all additional softwares and packages - use conda:**
+
+```yaml
+conda create -n metilene3 -c bioconda -c conda-forge python pandas scikit-learn seaborn biopython gseapy r-base bioconductor-ChIPseeker bioconductor-org.Hs.eg.db
+conda activate metilene3
+```
 
 
 ## Download and compile metilene3
