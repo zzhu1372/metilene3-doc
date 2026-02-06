@@ -50,7 +50,7 @@ More parameters could be added. Please check [unsupervised mode](./unsupervised/
 
 1. A HTML report summerizing DMRs and other results: ```/output_dir/report.html```.
 
-2. A tab-separated table containing all DMRs found by metilene3: ```/output_dir/DMRs.tsv``` <br>_(and ```/output_dir/DMRs-unsupervised.tsv``` for DMRs found with unsupervised mode)_. <br>[Click here to understand it!](./quick-example.html#dmr-table-output_dirdmrstsv)
+2. A tab-separated table containing all DMRs found by metilene3: ```/output_dir/DMRs.tsv``` <br>_(and ```/output_dir/DMRs-unsupervised.tsv``` for DMRs found with unsupervised mode)_ together with the sample-level DMR methylation rates ```/output_dir/DMR-met.tsv```. <br>[Click here to understand it!](./quick-example.html#dmr-table-output_dirdmrstsv)
 
 
 3. A tab-separated table containing name and order (ID) for each group: ```/output_dir/group-ID.tsv```. <br>

@@ -38,22 +38,24 @@ This table contains all DMRs found by metilene3. Format: **tab-separated**, work
 | chr | chromosome ID. | 
 | start | start position of the DMR. | 
 | stop | stop position of the DMR. | 
-| q | Bonferroni adjusted p-values based on MWU-test p-values. | 
-| meandiff | _(for developers)_ mean difference between the methylated group and the unmethylated group. | 
+| p-kwt | Kruskal-Wallis-Test p-value. | 
 | length | number of CpGs in the DMR. | 
-| mwu | MWU-test p-value. | 
-| p | 2D KS-test p-value. | 
+| meandiffabs | absolute mean difference between the methylated group and the unmethylated group. | 
 | mean | mean values for each sample/group - the order (ID) of groups can be found in ```/output_dir/groupID.tsv```. | 
 | sig.comparison | _(for developers)_ status of samples/groups: 1 for unmethylated, 2 for intermediate and 3 for methylated - the order (ID) of groups can be found in ```/output_dir/groupID.tsv```. | 
-| meandiffabs | absolute mean difference between the methylated group and the unmethylated group. | 
 | #Hypo/Int/Hyper | number of hypomethylated/intermediate/hypermethylated (Hypo/Int/Hyper)  samples/groups. | 
 | meanHypo/Int/Hyper | mean of hypomethylated/intermediate/hypermethylated (Hypo/Int/Hyper) samples/groups. | 
 | Hypo/Int/Hyper-samples/groups | the samples (unsupervised DMRs) or groups (supervised DMRs) that are classified as hypomethylated/intermediate/hypermethylated (Hypo/Int/Hyper). | 
+| fdr-kwt | Kruskal-Wallis-Test FDR. | 
 | distanceToTSS | distance to the transcription start site annotated by ChIPSeeker. <br>_(optional, only if the parameter annotation ```-anno``` is set.)_ | 
 | ENSEMBL | ENSEMBL ID annotated by ChIPSeeker. <br>_(optional, only if the parameter annotation ```-anno``` is set.)_ | 
 | SYMBOL | gene symbol annotated by ChIPSeeker. <br>_(optional, only if the parameter annotation ```-anno``` is set.)_ | 
 | anno | genomic annotation by ChIPSeeker. <br>_(optional, only if the parameter annotation ```-anno``` is set.)_ | 
 | DMTree | _(for developers)_ DMRs that are associated with DMTree splits. | 
+| meandiff | _(for developers)_ mean difference between the methylated group and the unmethylated group. | 
+| p-ks | 2D KS-test p-value. | 
+| q-ks | Bonferroni adjusted p-values based on MWU-test p-values. | 
+| p-mwu | MWU-test p-value. | 
 
 
 

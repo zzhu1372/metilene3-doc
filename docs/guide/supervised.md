@@ -11,7 +11,7 @@ nav_order: 4
 
 ---
 
-With supervised mode.
+With supervised mode, difference across groups will be reported. We sugguest sorting or filtering DMRs by their length and absolute mean difference.
 
 ```yaml
 python /path_to_metilene3/metilene3.py [-i <string>] [-g <string>] [-o <string>] [optional options...]
@@ -37,6 +37,9 @@ python /path_to_metilene3/metilene3.py [-i <string>] [-g <string>] [-o <string>]
 | -r, \--minDMR | integer | 5 | _(optional)_ minimum CpGs with minimum mean methylation difference in a segment, [details](DMR.html#segmentation)
 | -X, \--minNonNA | integer | 1 | _(optional)_ minimum samples with non-NA values in each group
 | -v, \--valley | double | 0.7 | _(optional)_ a cutoff for the difference between global and regional methylation differences, [details](http://legacy.bioinf.uni-leipzig.de/Software/metilene/Manual/#parameter_-v)
+| -k, \--anova | double | 5 | _(optional)_ maximum Kruskal-Wallis-Test p-value
 | -anno, \--annotation | string |  | _(optional)_ hg19 or hg38, use ChIPseeker to annotate the DMRs 
 | -refs, \--refSeq | string |  | _(optional)_ reference genome, ```fasta``` file, for sequence annotation
 | -gsea, \--genesets | string |  | _(optional)_ geneset ```gmt``` file for GSEA
+| -pdrl, \--pandarallel | bool | True | _(optional)_ True or False, run Kruskal-Wallis-Test with pandarallel
+

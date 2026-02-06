@@ -278,7 +278,8 @@ Run metilene3 with unsupervised mode:
 ```python
 os.system('python /path_to_metilene3/metilene3.py \
   -i ./input.tsv \
-  -o ./results_unsupervised')
+  -o ./results_unsupervised \
+  -anno hg19 -refs ./hg19.fa')
 ```
 
 Or, run metilene3 with supervised mode:
@@ -287,7 +288,8 @@ Or, run metilene3 with supervised mode:
 os.system('python /path_to_metilene3/metilene3.py \
   -i ./input.tsv \
   -g ./group.tsv \
-  -o ./results_supervised')
+  -o ./results_supervised \
+  -anno hg19 -refs ./hg19.fa')
 ```
 
 Finally you can find the results under ```./results_unsupervised``` or ```./results_supervised```.
