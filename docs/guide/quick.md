@@ -18,13 +18,6 @@ nav_order: 2
 ---
 
 
-## Input file(s)
-
-1. **CpG methylation matrix**: ```methylation.tsv``` <br> This matrix should include chromosome, position and CpG methylation levels for each sample. [Click to see an example!](./quick-example.html#cpg-methylation-matrix-methylationmat)
-
-2. **Group information table**: ```samples_groups.tsv``` _(optional, supervised mode only)_<br> If you already have the group information and wish to compare different groups, you can provide this file to metilene3 with this [format](./quick-example.html#group-information-table-samples_groupstsv).
-
-
 ## Run metilene3
 
 - [Unsupervised mode](./unsupervised.html): 
@@ -44,6 +37,13 @@ python /path_to_metilene3/metilene3.py -i methylation.tsv -g samples_groups.tsv 
 ```
 
 More parameters could be added. Please check [unsupervised mode](./unsupervised/) and [supervised mode](./supervised/) for details.
+
+
+## Input file(s)
+
+1. **CpG methylation matrix**: ```methylation.tsv``` <br> This matrix should include chromosome, position and CpG methylation levels for each sample. [Click to see an example!](./quick-example.html#cpg-methylation-matrix-methylationmat)
+
+2. **Group information table**: ```samples_groups.tsv``` _(optional, supervised mode only)_<br> If you already have the group information and wish to compare different groups, you can provide this file to metilene3 with this [format](./quick-example.html#group-information-table-samples_groupstsv).
 
 
 ## Output files

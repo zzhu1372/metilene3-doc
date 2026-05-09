@@ -24,21 +24,20 @@ nav_order: 1
 <br><br>
 - **If you ONLY need to call DMRs and cluster samples, you ONLY need to install:**
 0. [GNU Make](https://www.gnu.org/software/make/) (usually your OS has it)
-1. [Python](https://www.python.org/)
-2. Python packages: [pandas](https://pandas.pydata.org/)
+1. [Python](https://www.python.org/) (tested on python==3.10.0)
+2. Python packages: [pandas](https://pandas.pydata.org/) (tested on pandas==1.5.1)
 <br><br>
 - If you wish to use **ALL functions** (e.g., annotation, visualization and GSEA), additional software and packages are needed:
 0. [GNU Make](https://www.gnu.org/software/make/) (usually your OS has it)
 1. [R](https://www.r-project.org/) and [Python](https://www.python.org/)
 2. R packages: [ChIPseeker](https://bioconductor.org/packages/release/bioc/html/ChIPseeker.html) and annotation package for TxDb object (e.g., [org.Hs.eg.db](https://bioconductor.org/packages/release/data/annotation/html/org.Hs.eg.db.html), [hg19](https://www.bioconductor.org/packages/release/data/annotation/html/TxDb.Hsapiens.UCSC.hg19.knownGene.html), [hg38](https://www.bioconductor.org/packages/release/data/annotation/html/TxDb.Hsapiens.UCSC.hg38.knownGene.html), or [mm10](https://bioconductor.org/packages/release/data/annotation/html/TxDb.Mmusculus.UCSC.mm10.knownGene.html))
 3. Python packages: [pandas](https://pandas.pydata.org/), [numpy](https://numpy.org/), [scikit-learn](https://scikit-learn.org/), [matplotlib](https://matplotlib.org/), [seaborn](https://seaborn.pydata.org/), [biopython](https://biopython.org/wiki/Download), [gseapy](https://github.com/zqfang/GSEApy/tree/master), [pandarallel](https://pypi.org/project/pandarallel/)
-<br>**One simple solution to install all additional software and packages - use conda\*:**
+<br>**One simple solution to install all additional software and packages - use conda:**
 
 ```yaml
 conda create -y -n metilene3 -c bioconda -c conda-forge python==3.10.0 pandas pandarallel scikit-learn seaborn biopython gseapy r-base bioconductor-ChIPseeker bioconductor-org.Hs.eg.db bioconductor-txdb.hsapiens.ucsc.hg19.knowngene bioconductor-txdb.hsapiens.ucsc.hg38.knowngene
 conda activate metilene3
 ```
-<br>*GSEApy does not support python >3.11 if conda is used.
 
 ## Download and compile metilene3
 
@@ -53,7 +52,7 @@ make
 
 ```yaml
 cd /path_to_the_downloaded_file
-tar -xvzf metilene3 x.tar.gz
-cd ./metilene3
+tar -xvzf metilene3-3.1.tar.gz
+cd ./metilene3-3.1
 make
 ```
