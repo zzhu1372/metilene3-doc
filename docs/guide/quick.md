@@ -21,7 +21,7 @@ nav_order: 2
 ## Run metilene3
 
 - [Unsupervised mode](./unsupervised.html): 
-with unsupervised mode, each sample will be regarded as one group.
+with unsupervised mode, only the methylation matrix should be provided.
 
 ```yaml
 python /path_to_metilene3/metilene3.py -i methylation.tsv -o /output_dir
@@ -59,7 +59,7 @@ More parameters could be added. Please check [unsupervised mode](./unsupervised/
 
 4. Figures under the folder ```/output_dir/```: <br>(_only with unsupervised mode and the parameter visualization ```-plot``` is set to True_)
 	1. DMR tree: ```DMTree.[jpg, pdf]```, showing the hierarchical structure based on the sum of DMR weights (branch lengths) between two branches. You can also find the DMTree in Newick tree format: ```DMTree.nwk```.
-	2. PCA 2D-visualization and clustering heatmap based on sample-level DMR methylation ratios: <br>```[PCA, heatmap].[jpg, pdf]```.
+	2. PCA 2D-visualization and clustering heatmap based on sample-level DMR methylation ratios: <br>```[PCA, heatmap].[jpg, pdf]```. The source data can be found in  ```tsv``` files.
 
 5. GSEA results: ```/output_dir/GSEA/``` _(and ```/output_dir/GSEA-unsupervised/``` for unsupervised DMRs_). <br>_(only if the parameter annotation ```-anno``` and the parameter GSEA ```-gsea``` are set.)_ 
 
