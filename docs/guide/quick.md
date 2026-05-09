@@ -36,7 +36,7 @@ with supervised mode, each sample should be assigned to a group, which should be
 python /path_to_metilene3/metilene3.py -i methylation.tsv -g samples_groups.tsv -o /output_dir
 ```
 
-More parameters could be added. Please check [unsupervised mode](./unsupervised/) and [supervised mode](./supervised/) for details.
+More parameters could be added. Please check [unsupervised mode](./unsupervised.html) and [supervised mode](./supervised.html) for details.
 
 
 ## Input file(s)
