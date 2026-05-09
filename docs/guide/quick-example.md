@@ -6,7 +6,7 @@ layout: home
 
 ## Input:
 
-### CpG methylation matrix: ```methylation.mat```
+### CpG methylation matrix: ```methylation.tsv```
 The first column should be the chromosome ID and the second column should be the position of the CpG. The following columns should be samples. Format: **tab-separated**, value range: **0-1**, missing values representated by **.** (Please do NOT use **.** to represent zero!), and genomic position **sorted**. <br> If you have ```BED``` files and don't know how to generate this matrix, click [Example](./example).
 
 | chr | pos | sample_1 | sample_2 | sample_3 | ... |
@@ -18,7 +18,7 @@ The first column should be the chromosome ID and the second column should be the
 
 
 ### Group information table: ```samples_groups.tsv```
-This table should have two columns: **ID** and **Group**. The sample IDs in this table should be exactly matched to the sample IDs in ```methylation.mat```. Format: **tab-separated**.
+This table should have two columns: **ID** and **Group**. The sample IDs in this table should be exactly matched to the sample IDs in ```methylation.tsv```. Format: **tab-separated**.
 
 | ID | Group | 
 |:-----|:-----|
@@ -38,11 +38,11 @@ This table contains all DMRs found by metilene3. Format: **tab-separated**, work
 | chr | chromosome ID. | 
 | start | start position of the DMR. | 
 | stop | stop position of the DMR. | 
+| meandiffabs | absolute mean difference between the methylated group and the unmethylated group. | 
 | p-kwt | Kruskal-Wallis-Test p-value. | 
 | length | number of CpGs in the DMR. | 
-| meandiffabs | absolute mean difference between the methylated group and the unmethylated group. | 
 | mean | mean values for each sample/group - the order (ID) of groups can be found in ```/output_dir/groupID.tsv```. | 
-| sig.comparison | _(for developers)_ status of samples/groups: 1 for unmethylated, 2 for intermediate and 3 for methylated - the order (ID) of groups can be found in ```/output_dir/groupID.tsv```. | 
+| sig.comparison | status of samples/groups: 1 for unmethylated, 2 for intermediate and 3 for methylated - the order (ID) of groups can be found in ```/output_dir/groupID.tsv```. | 
 | #Hypo/Int/Hyper | number of hypomethylated/intermediate/hypermethylated (Hypo/Int/Hyper)  samples/groups. | 
 | meanHypo/Int/Hyper | mean of hypomethylated/intermediate/hypermethylated (Hypo/Int/Hyper) samples/groups. | 
 | Hypo/Int/Hyper-samples/groups | the samples (unsupervised DMRs) or groups (supervised DMRs) that are classified as hypomethylated/intermediate/hypermethylated (Hypo/Int/Hyper). | 
@@ -51,11 +51,12 @@ This table contains all DMRs found by metilene3. Format: **tab-separated**, work
 | ENSEMBL | ENSEMBL ID annotated by ChIPSeeker. <br>_(optional, only if the parameter annotation ```-anno``` is set.)_ | 
 | SYMBOL | gene symbol annotated by ChIPSeeker. <br>_(optional, only if the parameter annotation ```-anno``` is set.)_ | 
 | anno | genomic annotation by ChIPSeeker. <br>_(optional, only if the parameter annotation ```-anno``` is set.)_ | 
-| DMTree | _(for developers)_ DMRs that are associated with DMTree splits. | 
 | meandiff | _(for developers)_ mean difference between the methylated group and the unmethylated group. | 
-| p-ks | 2D KS-test p-value. | 
-| q-ks | Bonferroni adjusted p-values based on MWU-test p-values. | 
-| p-mwu | MWU-test p-value. | 
+| p-ks | _(for developers)_ 2D KS-test p-value. | 
+| q-ks | _(for developers)_ Bonferroni adjusted p-values based on MWU-test p-values. | 
+| p-mwu | _(for developers)_ MWU-test p-value. | 
+| DMTree | _(for developers)_ DMRs that are associated with DMTree splits. | 
+
 
 
 
