@@ -33,7 +33,7 @@ python /path_to_metilene3/metilene3.py [-i <string>] [-o <string>] [optional opt
 | -m, \--minCpGs | integer | 10 | _(optional)_ minimum CpGs, [details](./DMR.html#segmentation)
 | -d, \--minMethDiff | double | 0.1 | _(optional)_ minimum mean methylation difference, [details](./DMR.html#segmentation)
 | -r, \--minDMR | integer | 5 | _(optional)_ minimum CpGs with minimum mean methylation difference in a segment, [details](./DMR.html#segmentation)
-| -k, \--anova | double | 5 | _(optional)_ maximum Kruskal-Wallis-Test p-value
+| -k, \--anova | double | 0.01 | _(optional)_ Kruskal-Wallis-Test p-value cutoff
 | -v, \--valley | double | 0.7 | _(optional)_ a cutoff for the difference between global and regional methylation differences, [details](http://legacy.bioinf.uni-leipzig.de/Software/metilene/Manual/#parameter_-v)
 | -D, \--minMethDiffHigh | double | 0.5 | _(optional)_ minimum mean methylation difference for DMTree and GSEA, similar to ```-d, --minMethDiff``` but a higher value will be recommanded to reduce the number of false positive DMRs, [details](./DMR.html#segmentation)
 | -u, \--clusteringRatio | double | 0.5 | _(optional)_ maximum ratio of CpGs with minimum difference in a cluster, [details](./DMR.html#clustering)
