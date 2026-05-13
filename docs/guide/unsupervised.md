@@ -44,7 +44,7 @@ python /path_to_metilene3/metilene3.py [-i <string>] [-o <string>] [optional opt
 | -anno, \--annotation | string |  | _(optional)_ hg19 or hg38, use ChIPseeker to annotate the DMRs 
 | -refs, \--refSeq | string |  | _(optional)_ reference genome, ```fasta``` file, for sequence annotation
 | -gsea, \--genesets | string |  | _(optional)_ geneset ```gmt``` file for GSEA
-| -udmr, \--unsupervisedDMRs | bool | True | _(optional)_ Run clustering with existing metilene3 unsupervised DMRs
+| -udmr, \--unsupervisedDMRs | bool | | _(optional)_ Run DMTree clustering with existing metilene3 unsupervised DMRs
 | -wsup, \--withSupervised | bool | True | _(optional)_ True or False, run supervised mode after clustering
 | -pdrl, \--pandarallel | bool | True | _(optional)_ True or False, run Kruskal-Wallis-Test with pandarallel
 
