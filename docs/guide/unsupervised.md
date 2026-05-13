@@ -37,13 +37,14 @@ python /path_to_metilene3/metilene3.py [-i <string>] [-o <string>] [optional opt
 | -v, \--valley | double | 0.7 | _(optional)_ a cutoff for the difference between global and regional methylation differences, [details](http://legacy.bioinf.uni-leipzig.de/Software/metilene/Manual/#parameter_-v)
 | -D, \--minMethDiffHigh | double | 0.5 | _(optional)_ minimum mean methylation difference for DMTree and GSEA, similar to ```-d, --minMethDiff``` but a higher value will be recommanded to reduce the number of false positive DMRs, [details](./DMR.html#segmentation)
 | -u, \--clusteringRatio | double | 0.5 | _(optional)_ maximum ratio of CpGs with minimum difference in a cluster, [details](./DMR.html#clustering)
-| -n, \--minNSamples | integer | 3 | _(optional)_ minimum samples in a cluster, [details](./DMTree.html)
+| -n, \--minNSamples | integer | 6 | _(optional)_ minimum samples in a cluster, [details](./DMTree.html)
 | -w, \--minSumDMRs | integer | 100 | _(optional)_ minimum sum of DMR weights to split samples, [details](./DMTree.html)
 | -auto, \--automatic | bool | False | _(optional)_ True or False, set the unsupervised mode parameters -D and -w automatically
 | -plot, \--visualization | bool | False | _(optional)_ True or False, plot PCA and heatmap based on DMR methylation
 | -anno, \--annotation | string |  | _(optional)_ hg19 or hg38, use ChIPseeker to annotate the DMRs 
 | -refs, \--refSeq | string |  | _(optional)_ reference genome, ```fasta``` file, for sequence annotation
 | -gsea, \--genesets | string |  | _(optional)_ geneset ```gmt``` file for GSEA
+| -udmr, \--unsupervisedDMRs | bool | True | _(optional)_ Run clustering with existing metilene3 unsupervised DMRs
 | -wsup, \--withSupervised | bool | True | _(optional)_ True or False, run supervised mode after clustering
 | -pdrl, \--pandarallel | bool | True | _(optional)_ True or False, run Kruskal-Wallis-Test with pandarallel
 
