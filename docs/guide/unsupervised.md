@@ -23,7 +23,7 @@ python /path_to_metilene3/metilene3.py [-i <string>] [-o <string>] [optional opt
 
 | parameter | unit  | default | description
 |:--------|:-------------------------------|:---|:------------------------------|
-| -i, \--input | string |  | the input methylation data, [format](../quick-example.html#cpg-methylation-matrix-methylationmat)
+| -i, \--input | string |  | the input methylation data, [format](./quick-example.html#cpg-methylation-matrix-methylationmat)
 | -o, \--output | string |  | the output directory
 | -t, \--threads | integer | 1 | _(optional)_ number of threads
 | -s, \--seed | integer | 1 | _(optional)_ set seed for random generator
